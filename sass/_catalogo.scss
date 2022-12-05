@@ -1,0 +1,57 @@
+@import "variables";
+
+.bodycat{
+    background-color:$back1;
+}
+.section1{
+    height: 100px;
+}
+.section1{
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    font-family: $letra-titulo;
+    background-color: $back1;
+    .section1__nav ul li{
+        display: inline-block;
+        padding: 5px;
+        transition: all 1.5s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }  
+    }
+}
+.section2{
+    margin: 10px;
+    background-color: $back1;
+    h1{
+        font-family: $letra-titulo;
+        margin: 10px;
+    }
+    h2{
+        font-family: $letra2;
+        margin: 10px;
+    }
+    .vinos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .imgv{
+            height: 150px;
+            opacity: .8;
+            transition: all 1s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        p{
+            text-align: center;
+            font-family: $letra2;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+@import "variables";
+
+.padre__com{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: $back1;
+}
+.padre__comsection form{
+    font-family: $letra2;
+    justify-items: center;
+    text-align: center;
+}

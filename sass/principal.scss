@@ -1,0 +1,48 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    align-items: stretch;
+    grid-template-areas:
+      "header header header header"
+      "foto catalogo comunidad promociones"
+      "marcas catalogo comunidad promociones"
+      "footer footer footer footer";
+      background-color: $back1;
+      .header { grid-area: header; }
+  
+      .catalogo { grid-area: catalogo; }
+      
+      .comunidad { grid-area: comunidad; }
+      
+      .footer { grid-area: footer; }
+      
+      .promociones { grid-area: promociones; }
+      
+      .marcas { grid-area: marcas; }
+      
+      .foto { grid-area: foto; }
+
+      
+
+
+}
+    
+@import "header"; 
+@import "index"; 
+@import "footer";
+@import "catalogo";
+@import "comunidad";
+@import "nosotros";
+@import "mediaQ"
+
+

@@ -144,7 +144,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color:#67595E;
+    background-color: #67595E;
     font-family: 'Alegreya SC', serif;
 }
 .footer .pagos p{
@@ -166,8 +166,7 @@
 }
 .section1{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
     padding: 20px;
     font-family: 'Merienda One', cursive;
     background-color: #EED6D3;
@@ -197,6 +196,11 @@
     font-family: 'Alegreya SC', serif;
     margin: 10px;
 }
+.vinos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .imgv{
     height: 150px;
     opacity: .8;
@@ -205,11 +209,7 @@
 .imgv:hover{
     opacity: 1;
 }
-.vinos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
+
 .vinos p{
     text-align: center;
     font-family: 'Alegreya SC', serif;
@@ -275,8 +275,8 @@
 
 @media only screen and (max-width:480px){
     .container {  display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 480px;
+        grid-template-rows: 1fr 1fr 1fr 1.5fr 0.5fr 1fr;
         grid-auto-columns: 1fr;
         gap: 2px 2px;
         grid-auto-flow: row;
@@ -291,18 +291,14 @@
           
           background-color: #EED6D3;
       }
-      .navheader ul li{
+    .navheader{
+        justify-items: left;
+    }  
+    .navheader ul li{
         display:block;
         margin: 10px;  
     }
-    .footer{
-        display: flex;
-        flex-direction:column;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color:#67595E;
-        font-family: 'Alegreya SC', serif;
-    }
+    
     .section1__nav ul{
         display: flex;
         flex-direction:row;
@@ -331,6 +327,16 @@
         height: 300px;
         width: 200px;
     }
+    .footer{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:#67595E;
+        font-family: 'Alegreya SC', serif;
+    }
+    
+    
     
  }
     

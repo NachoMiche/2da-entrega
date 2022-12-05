@@ -1,0 +1,37 @@
+@import "variables";
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../multimedia/Background/header.png);
+    background-size: cover;
+    .logo{
+        height: 150px;
+        width: 150px;
+        align-items: center;
+        border-radius: 20%;
+        transition: all 1s ease;
+        margin: 10px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .navheader ul li{
+        display: inline-block;
+        margin: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-family: $letra-titulo;
+            transition: all 1.5s ease;
+            &:hover{
+                color: white;
+            }
+        }
+        
+    }
+
+}
