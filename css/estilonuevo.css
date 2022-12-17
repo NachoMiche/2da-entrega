@@ -11,7 +11,10 @@
   gap: 2px 2px;
   grid-auto-flow: row;
   align-items: stretch;
-  grid-template-areas: "header header header header" "foto catalogo comunidad promociones" "marcas catalogo comunidad promociones" "footer footer footer footer";
+  grid-template-areas: "header header header header"
+ "foto catalogo comunidad promociones"
+ "marcas catalogo comunidad promociones"
+ "footer footer footer footer";
   background-color: #EED6D3; }
   .container .header {
     grid-area: header; }
@@ -194,21 +197,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 50px;
-  background-color: #EED6D3; }
-  .padre3 .section3 {
-    height: 280px;
-    background-color: #67595E;
-    text-align: center;
-    justify-content: center;
-    font-family: "Alegreya SC", serif;
-    margin: 40px;
-    transition: all 1.5s ease;
-    opacity: 0.5; }
-    .padre3 .section3:hover {
-      opacity: 1; }
-    .padre3 .section3 p {
-      text-align: center;
-      font-size: 25px; }
+  background-color: #EED6D3;
+  height: 700px;
+  font-family: "Alegreya SC", serif; }
+  
+  
 
 @media only screen and (max-width: 480px) {
   .container {
@@ -219,12 +212,20 @@
     gap: 2px 2px;
     grid-auto-flow: row;
     align-items: stretch;
-    grid-template-areas: "header" "catalogo" "comunidad" "promociones" "foto" "footer";
+    grid-template-areas: "header"
+ "catalogo"
+ "comunidad"
+ "promociones"
+ "foto"
+ "footer";
     background-color: #EED6D3; }
   .navheader {
-    justify-items: left; }
+    display: block;
+    flex-direction: column;
+    justify-items: center; }
   .navheader ul li {
     display: block;
+    text-align: center;
     margin: 10px; }
   .section1__nav ul {
     display: flex;
